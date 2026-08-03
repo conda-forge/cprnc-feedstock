@@ -1,6 +1,6 @@
 context:
   name: cprnc
-  version: "1.1.4"
+  version: "1.1.5"
 
 package:
   name: ${{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://github.com/ESMCI/cprnc/archive/v${{ version }}.tar.gz
-  sha256: 6ed79a1067a47e41e437ec784bc20db82548ea4b3b6c72fef155023259e6390b
+  sha256: f0af5f4180bc93ebac799aa8792d1129c370138ef1fb782d4ecebcd6a71da688
 
 build:
   skip:
     - win
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -35,7 +35,7 @@ tests:
       run:
         - perl
     script:
-    - ./run_tests -outdir test_outputs
+      - ./run_tests -outdir test_outputs
 
 about:
   homepage: https://github.com/ESMCI/cprnc
