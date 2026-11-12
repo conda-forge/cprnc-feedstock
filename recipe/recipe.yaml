@@ -22,7 +22,7 @@ requirements:
     - ${{ stdlib('c') }}
     - cmake
     - ninja
-    - pkg-config
+    - pkgconf
   host:
     - netcdf-fortran
 
