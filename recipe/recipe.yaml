@@ -1,6 +1,6 @@
 context:
   name: cprnc
-  version: "1.1.5"
+  version: "1.1.6"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/ESMCI/cprnc/archive/v${{ version }}.tar.gz
-  sha256: f0af5f4180bc93ebac799aa8792d1129c370138ef1fb782d4ecebcd6a71da688
+  sha256: 6cf954a5e6bd3fbc1a8918d2ed9dc12d8f073ac61958eb1fad9737e467548d0d
 
 build:
   skip:
@@ -22,7 +22,7 @@ requirements:
     - ${{ stdlib('c') }}
     - cmake
     - ninja
-    - pkg-config
+    - pkgconf
   host:
     - netcdf-fortran
 
