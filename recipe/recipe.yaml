@@ -1,6 +1,6 @@
 context:
   name: cprnc
-  version: "1.1.6"
+  version: "1.1.7"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/ESMCI/cprnc/archive/v${{ version }}.tar.gz
-  sha256: 6cf954a5e6bd3fbc1a8918d2ed9dc12d8f073ac61958eb1fad9737e467548d0d
+  sha256: 36c438b66b86908503b2e844fda3aa1c3c5834fb6aac0b5d0a432e05702b9373
 
 build:
   skip:
